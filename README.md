@@ -39,7 +39,7 @@ The container is the main element here, which is nothing more than a div with al
 
 I do not know, and I do not want to replace Breakdance Grid in the future. I want features that I need right now and in my own way.
 
-# UPDATES and Download
+# UPDATES
 
 ##### Alpha 0.03 23/04/2023
 
