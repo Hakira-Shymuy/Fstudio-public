@@ -151,6 +151,22 @@ class Container extends \Breakdance\Elements\Element
         false,
         [],
       ), c(
+        "align_items",
+        "Align Items",
+        [],
+        ['type' => 'dropdown', 'layout' => 'inline', 'items' => ['0' => ['value' => 'stretch', 'text' => 'Stretch'], '1' => ['value' => 'start', 'text' => 'Start'], '2' => ['value' => 'center', 'text' => 'Center'], '3' => ['value' => 'end', 'text' => 'End']], 'condition' => ['0' => ['0' => ['path' => 'design.grid_layout.is_grid', 'operand' => 'is set', 'value' => '']]]],
+        true,
+        false,
+        [],
+      ), c(
+        "justify_items",
+        "Justify Items",
+        [],
+        ['type' => 'dropdown', 'layout' => 'inline', 'items' => ['0' => ['value' => 'stretch', 'text' => 'Stretch'], '1' => ['value' => 'start', 'text' => 'Start'], '2' => ['value' => 'center', 'text' => 'center'], '3' => ['value' => 'end', 'text' => 'End']], 'condition' => ['0' => ['0' => ['path' => 'design.grid_layout.is_grid', 'operand' => 'is set', 'value' => '']]]],
+        true,
+        false,
+        [],
+      ), c(
         "grid_alert",
         "Grid Alert",
         [],

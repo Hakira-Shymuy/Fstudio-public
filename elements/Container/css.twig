@@ -4,7 +4,7 @@
   {{ macros.borders(design.borders) }}
   {{ macros.fancyBackgroundHtml(design.background) }}
     
- 
+
 {% if design.grid_layout.is_grid %}
   /* is grid */
   display: grid;
@@ -25,9 +25,30 @@
 {% endif %}
 
   {{ macros.layout(design.flex_layout) }}
+ 
+/* Align on Vertical axis */
+{% if design.grid_layout.align_items == 'stretch' %}
+	align-items: stretch;
+{% elseif design.grid_layout.align_items == 'start' %}
+	align-items: start;
+{% elseif design.grid_layout.align_items == 'center' %}
+	align-items: center;
+{% elseif design.grid_layout.align_items == 'end' %}
+	align-items: end;
+{% endif %}
       
-  
-  
+/* Align on Horizontal axis */
+{% if design.grid_layout.justify_items == 'stretch' %}
+	justify-items: stretch;
+{% elseif design.grid_layout.justify_items == 'start' %}
+	justify-items: start;
+{% elseif design.grid_layout.justify_items == 'center' %}
+	justify-items: center;
+{% elseif design.grid_layout.justify_items == 'end' %}
+	justify-items: end;
+{% endif %}
+
+      
 }
 
 {{ macros.fancyBackgroundCss('%%SELECTOR%%', design.background, breakpoint) }}

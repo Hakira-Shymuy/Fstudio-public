@@ -38,3 +38,13 @@ The container is the main element here, which is nothing more than a div with al
 ### Do I need to wait for Breakdance Grid or will this be better?
 
 I do not know, and I do not want to replace Breakdance Grid in the future. I want features that I need right now and in my own way.
+
+# UPDATES and Download
+
+##### Alpha 0.03 23/04/2023
+
+Added Align Items and Justify Items on Grid controls
+Those work at a parent level, and control all the child elements
+
+[Align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
+[Justify-items](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items)
