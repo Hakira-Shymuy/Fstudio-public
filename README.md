@@ -23,6 +23,7 @@ I do not provide any official support, but I can try to help.
 ### Where can you reach me?
 
 You can find me on Breakdance community Discord server:
+[Unofficial Breakdance Builder Community](https://discord.gg/TYXpjzvShs)
 
 ### What is different from my elements vs Breakdance elements?
 
