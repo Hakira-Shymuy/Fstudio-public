@@ -1,42 +1,35 @@
-# Fstudio-public
+# FStudio-public
 
-Public Version of FStudio elements for breakdance
+Public Version of FStudio elements for Breakdance
 
-## What is FStudio
+## What is FStudio?
 
-FStudio is my own web company and this elements are used by my self and by my clients in Breakdance Page Builder ( I have my own private version )
+FStudio is my own agency company, and this plugin is a public version of my own private plugin used by myself and my clients with Breakdance.
 
-### Why i build it?
+### Why did I build it?
 
-Because i like (more) the way that i have things on my elements
+I built it because I prefer the way I have things in my elements.
 
-### Can i use it?
+### Can you use it?
 
-Yes, you can download this version (FStudio Public) and use it on your own or clients websites
-However, i will not be responsible for any problem, damage, incompatibility or any other situation caused by my plugin/elements
+Yes, you can download this version (FStudio Public) and use it on your own or clients' websites. However, I will not be responsible for any problems, damages, incompatibilities, or any other situations caused by my plugin/elements.
 
 ## USE AT YOUR OWN RISK
 
-### Do i provide support?
+### Do I provide support?
 
-I do not provide any official Support, however, i can try to help
+I do not provide any official support, but I can try to help.
 
-### Where can i reach you?
+### Where can you reach me?
 
-I will later on provide bugs and support on Github, when i set up the things later on
+You can find me on Breakdance community Discord server:
 
-For now:
-You can contact me or find me at
+### What is different from my elements vs Breakdance elements?
 
-#### What is diferent from your elements vs breakdance elements
+First of all, I do not want to provide anything that Breakdance already provides, except on the way they work. My elements are adapted for my own usability, the way that I think makes more sense. If it does not match how you think or if it does not make sense to you, then do not install the plugin.
 
-First of all, i do not want to provide anything that breakdance already provides ( besides ) the way that things work
-They are adapted for my own usability, the way that i think that makes more sense, IF that does not match how you think or, if it does not make sense, then do not install the plugin
+The container is the main element here, which is nothing more than a div with all the capabilities of a Breakdance div, but with different control layouts. It also has grid controls created natively with Breakdance elements studio.
 
-Container is the main element here, is nothing more than a Div with all the Breakdance Div capabilities, but the controls have a diferent layout
-Also, it have grid controls ( created native with breakdance elements studio )
+### Do I need to wait for Breakdance Grid or will this be better?
 
-#### Do i need to wait for Breakdance Grid or will this be better?
-
-I do not know and i do not want to replace Breakdance Grid in the future
-I want features that i need ( Right now ) and on ( My way )
+I do not know, and I do not want to replace Breakdance Grid in the future. I want features that I need right now and in my own way.
