@@ -1,0 +1,33 @@
+%%SELECTOR%% {
+  {{ macros.spacing_all(design.spacing) }}
+  {{ macros.size(design.size) }}
+  {{ macros.borders(design.borders) }}
+  {{ macros.fancyBackgroundHtml(design.background) }}
+    
+ 
+{% if design.grid_layout.is_grid %}
+  /* is grid */
+  display: grid;
+  column-gap: {{ design.grid_layout.column_gap.style }};/* grid column gap */
+  row-gap: {{ design.grid_layout.row_gap.style }};/* grid row gap */
+  {% if design.grid_layout.auto_columns %}
+    grid-template-columns:repeat(auto-fit, minmax({{ design.grid_layout.auto_min.style }},{{ design.grid_layout.auto_max.style }}));
+  {% else %}
+    grid-template-columns:repeat({{ design.grid_layout.grid_columns }}, 1fr);
+  {% endif %}
+
+{% else %}
+   /* is not grid */
+  {% if design.grid_layout.is_child %}
+  	grid-column: span {{ design.grid_layout.column_span }};
+  {% endif %}
+  
+{% endif %}
+
+  {{ macros.layout(design.flex_layout) }}
+      
+  
+  
+}
+
+{{ macros.fancyBackgroundCss('%%SELECTOR%%', design.background, breakpoint) }}
