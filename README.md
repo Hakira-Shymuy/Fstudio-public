@@ -6,6 +6,10 @@ Public Version of FStudio elements for Breakdance
 
 FStudio is my own agency company, and this plugin is a public version of my own private plugin used by myself and my clients with Breakdance.
 
+### What it does?
+
+[Video here](https://sendspark.com/share/6gois2xjh7msh21v)
+
 ### Why did I build it?
 
 I built it because I prefer the way I have things in my elements.
