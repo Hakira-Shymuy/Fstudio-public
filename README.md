@@ -50,4 +50,4 @@ Those work at a parent level, and control all the child elements
 [Justify-items](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items)
 
 
-[Download branch 0.0.4 - lastest](https://github.com/Hakira-Shymuy/Fstudio-public/archive/refs/heads/0.0.4.zip)
+[Lastest version 0.0.4](https://github.com/Hakira-Shymuy/Fstudio-public/tree/0.0.4)
