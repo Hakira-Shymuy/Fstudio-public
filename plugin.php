@@ -9,7 +9,7 @@
  * License: GPLv3
  * Text Domain: breakdance
  * Domain Path: /languages/
- * Version: 0.0.3 - Alpha
+ * Version: 0.0.4 - Alpha
  */
 
 namespace FStudioCElements;

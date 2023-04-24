@@ -41,10 +41,15 @@ I do not know, and I do not want to replace Breakdance Grid in the future. I wan
 
 # UPDATES and Download
 
-##### Alpha 0.03 23/04/2023
+##### Alpha 0.0.3 23/04/2023
 
 Added Align Items and Justify Items on Grid controls
 Those work at a parent level, and control all the child elements
 
 [Align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
 [Justify-items](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items)
+
+##### Alpha 0.0.4 23/04/2023
+
+Fixed invalid css rules with empty values on breakpoints
+Created Grid Alert (do not display flex controls or container will have bad css)

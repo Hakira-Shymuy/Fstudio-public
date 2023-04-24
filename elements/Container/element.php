@@ -90,7 +90,7 @@ class Container extends \Breakdance\Elements\Element
       "EssentialElements\\layout",
       "Flex Layout",
       "flex_layout",
-       ['type' => 'popout']
+       ['condition' => ['0' => []], 'type' => 'popout']
      ), c(
         "grid_layout",
         "Grid Layout",
@@ -99,6 +99,14 @@ class Container extends \Breakdance\Elements\Element
         "Is Grid",
         [],
         ['type' => 'toggle', 'layout' => 'inline'],
+        true,
+        false,
+        [],
+      ), c(
+        "no_display_flex",
+        "No Display Flex",
+        [],
+        ['type' => 'alert_box', 'layout' => 'vertical', 'alertBoxOptions' => ['style' => 'error', 'content' => '<p>You activated Grid, do not use Display Flex or you will have invalid CSS</p>'], 'condition' => ['0' => ['0' => ['path' => 'design.grid_layout.is_grid', 'operand' => 'is set', 'value' => '']]]],
         false,
         false,
         [],
@@ -179,7 +187,7 @@ class Container extends \Breakdance\Elements\Element
         "Is Child",
         [],
         ['type' => 'toggle', 'layout' => 'inline', 'condition' => ['0' => ['0' => ['path' => 'design.grid_layout.is_grid', 'operand' => 'is not set', 'value' => '']]]],
-        false,
+        true,
         false,
         [],
       ), c(
@@ -191,7 +199,7 @@ class Container extends \Breakdance\Elements\Element
         false,
         [],
       )],
-        ['type' => 'section'],
+        ['type' => 'section', 'sectionOptions' => ['type' => 'accordion']],
         false,
         false,
         [],
@@ -290,7 +298,7 @@ class Container extends \Breakdance\Elements\Element
 
     static function propertyPathsToWhitelistInFlatProps()
     {
-        return ['design.background.image', 'design.background.overlay.image', 'design.background.image_settings.unset_image_at', 'design.background.image_settings.size', 'design.background.image_settings.height', 'design.background.image_settings.repeat', 'design.background.image_settings.position', 'design.background.image_settings.left', 'design.background.image_settings.top', 'design.background.image_settings.attachment', 'design.background.image_settings.custom_position', 'design.background.image_settings.width', 'design.background.overlay.image_settings.custom_position', 'design.background.image_size', 'design.background.overlay.image_size', 'design.background.overlay.type', 'design.background.design.layout.horizontal.vertical_at', 'design.background.image_settings', 'design.grid_child.spans', 'design.grid_layout.column_span', 'design.grid_layout.is_child', 'design.grid_layout.grid_columns', 'design.grid_layout.is_grid'];
+        return ['design.background.image', 'design.background.overlay.image', 'design.background.image_settings.unset_image_at', 'design.background.image_settings.size', 'design.background.image_settings.height', 'design.background.image_settings.repeat', 'design.background.image_settings.position', 'design.background.image_settings.left', 'design.background.image_settings.top', 'design.background.image_settings.attachment', 'design.background.image_settings.custom_position', 'design.background.image_settings.width', 'design.background.overlay.image_settings.custom_position', 'design.background.image_size', 'design.background.overlay.image_size', 'design.background.overlay.type', 'design.background.design.layout.horizontal.vertical_at', 'design.background.image_settings', 'design.grid_child.spans', 'design.grid_layout.column_span', 'design.grid_layout.column_gap'];
     }
 
     static function propertyPathsToSsrElementWhenValueChanges()

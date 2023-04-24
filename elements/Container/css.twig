@@ -3,7 +3,6 @@
   {{ macros.size(design.size) }}
   {{ macros.borders(design.borders) }}
   {{ macros.fancyBackgroundHtml(design.background) }}
-    
 
 {% if design.grid_layout.is_grid %}
   /* is grid */
@@ -21,11 +20,11 @@
   {% if design.grid_layout.is_child %}
   	grid-column: span {{ design.grid_layout.column_span }};
   {% endif %}
-  
+   {{ macros.layout(design.flex_layout) }}
 {% endif %}
 
-  {{ macros.layout(design.flex_layout) }}
- 
+      
+
 /* Align on Vertical axis */
 {% if design.grid_layout.align_items == 'stretch' %}
 	align-items: stretch;
@@ -50,5 +49,6 @@
 
       
 }
+
 
 {{ macros.fancyBackgroundCss('%%SELECTOR%%', design.background, breakpoint) }}
